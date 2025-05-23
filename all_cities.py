@@ -5,5 +5,5 @@ def get_all_cities() -> list[str]:
     script_dir = Path(__file__).parent  # Директория скрипта
     file_path = script_dir / 'cities.txt'
     with open(file_path, 'r', encoding='utf-8') as file:
-        cities = [line.strip().lower() for line in file if line.strip()]
+        cities = [line.strip() for line in file if line.strip()]
     return cities
