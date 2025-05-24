@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 def create_menu():
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=False)
     markup.add(types.KeyboardButton('🎮 Камень-ножницы-бумага'))
     markup.add(types.KeyboardButton('🏙️ Города'))
     markup.add(types.KeyboardButton('🔤 Угадай слово'))
