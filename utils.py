@@ -4,9 +4,8 @@ from pathlib import Path
 
 def create_menu():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=False)
-    markup.add(types.KeyboardButton('🎮 Камень-ножницы-бумага'))
-    markup.add(types.KeyboardButton('🏙️ Города'))
-    markup.add(types.KeyboardButton('🔤 Угадай слово'))
+    markup.add(types.KeyboardButton('🎮 Камень-ножницы-бумага'),
+               types.KeyboardButton('🏙️ Города'), types.KeyboardButton('🔤 Угадай слово'))
     markup.add(types.KeyboardButton('❓ Помощь'))
     return markup
 
